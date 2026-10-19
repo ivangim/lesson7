@@ -40,6 +40,5 @@ class CalculatorPage:
         self.driver.find_element(*self.BUTTON_8).click()
         self.driver.find_element(*self.BUTTON_EQUALS).click()
 
-        result_text = self.wait_for_result("15")
-        return result_text
-
+        result = self.wait_for_result("15")
+        return result
